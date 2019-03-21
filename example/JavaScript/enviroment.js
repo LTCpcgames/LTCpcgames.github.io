@@ -35,11 +35,11 @@ function powerUsage(enabled) {
 
         if (gridUsage2 <= 50) {
             document.getElementById('power2Load').style.fontWeight = "normal";
-            document.getElementById('power2Load').style.color = "green"
+            document.getElementById('power2Load').style.color = "green";
             document.getElementById('power2Load').innerHTML = "Low";
         } else if (gridUsage2 > 50 && gridUsage2 <= 80) {
             document.getElementById('power2Load').style.fontWeight = "normal";
-            document.getElementById('power2Load').style.color = "orange"
+            document.getElementById('power2Load').style.color = "orange";
             document.getElementById('power2Load').innerHTML = "Medium";
         } else if (gridUsage2 > 80) {
             document.getElementById('power2Load').innerHTML = "High";
@@ -91,4 +91,4 @@ window.setInterval(function () {
 
 document.getElementById('script').addEventListener('load', function() {
     powerUsage(second_enabled);
-}, false)
+}, false);
